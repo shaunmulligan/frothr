@@ -1,0 +1,22 @@
+#drop {
+  position: fixed;
+  bottom:5px;
+  right:5px;
+  min-height: 100px;
+  width: 100px;
+  border: 3px dashed #ccc;
+  margin: 10px;
+  padding: 10px;
+  background-image: url("chrome-extension://npibhchbbioggjadnchgmdemnkagnfdd/icons/heart_icon.png");
+  background-repeat:no-repeat;
+  background-position: center center;
+  z-index: 100;
+}
+#drop.over{opacity: 0.5;}
+#droppedLink {
+  position: fixed;
+  bottom: 135px;
+  right:5px;
+  margin: 3px 0;
+  display: none;
+}

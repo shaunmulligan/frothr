@@ -1,0 +1,30 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+</style>
+
+<div id="mainPopup">
+<h1>Frothr</h1>
+<p>drop sound cloud links onto heart</p>
+<ul>
+	<li> link 1 </li>
+	<li> link 2 </li>
+	<li> link 3 </li>
+</ul>
+</div>
+<script type="text/javascript">
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log("message sent");
+    if (request.greeting == "hello")
+      sendResponse({farewell: "goodbye"});
+  });
+</script>
